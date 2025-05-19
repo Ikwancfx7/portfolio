@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./style.css --minify",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
